@@ -1,0 +1,44 @@
+.cont{
+    height: 350px;
+    width: 300px;
+    background-color: aliceblue;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cont div{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+
+}
+
+.cont span{
+    position:relative;
+    top: 50%;
+    color: azure;
+}
+
+.squareRed{
+    background-color: red;
+}
+
+.squareBlue{
+    background-color: blue;
+}
+
+.squareGreen{
+    background-color: green;
+}
+
+.squareYellow{
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 400px){
+    .cont{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
