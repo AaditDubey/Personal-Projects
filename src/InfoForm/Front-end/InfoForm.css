@@ -1,25 +1,25 @@
-.input{
-    width:30%
+.input {
+  width: 30%;
 }
-.Info-Form{
-    margin-top: 3%;
-    position: relative;
-    left: 35%;;
+.Info-Form {
+  margin-top: 3%;
+  position: relative;
+  left: 35%;
 }
-.Info-Form *{
-    margin-top: 0.75%;
+.Info-Form * {
+  margin-top: 0.75%;
 }
-.grey-bar{
-    background-color: gray;
-    height: 15px;
-    width: 30%;
-    border-radius: 8px;
+.grey-bar {
+  background-color: gray;
+  height: 15px;
+  width: 30%;
+  border-radius: 8px;
 }
 
-.blue-bar{
-    background: linear-gradient(90deg, purple 50%, blue);
-    height: 15px;
-    margin: 0px;
-    transition: ease-in 1s;
-    border-radius: 8px;
+.blue-bar {
+  background: linear-gradient(90deg, purple 50%, blue);
+  height: 15px;
+  margin: 0px;
+  transition: ease-in 1s;
+  border-radius: 8px;
 }

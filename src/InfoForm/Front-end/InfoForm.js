@@ -6,19 +6,18 @@ import SelectInputDiv from "./SelectInputDiv";
 import Status from "./Status";
 import TextInputDiv from "./TextInputDiv";
 
-
 const InfoForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [political, setPolitical] = useState();
   const [sexual, setSexual] = useState();
   const [count, setCount] = useState(0);
-  
+
   return (
-    <form className = "Info-Form">
+    <form className="Info-Form">
       <h1>Information Form</h1>
-      <br/>
-      <Status count={count}/>
+      <br />
+      <Status count={count} />
       <TextInputDiv
         name={"Name"}
         updateVal={setName}
@@ -43,14 +42,21 @@ const InfoForm = () => {
       />
       <SelectInputDiv
         name="Your sexual preference"
-        opt={[ "Heterosexual", "Homosexual", "Asexual","I choose not to disclose."]}
+        opt={[
+          "Heterosexual",
+          "Homosexual",
+          "Asexual",
+          "I choose not to disclose.",
+        ]}
         updateVal={setSexual}
         val={sexual}
         count={count}
         setCount={setCount}
       />
-      <br/>
-      <Button type="submit" size="lg" variant="outline-primary">Submit</Button>
+      <br />
+      <Button type="submit" size="lg" variant="outline-primary">
+        Submit
+      </Button>
     </form>
   );
 };

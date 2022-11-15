@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Weather.css";
 
-const WeatherInfo = ({ data, success,countryState}) => {
+const WeatherInfo = ({ data, success, countryState }) => {
   const hours = new Date(data.sys.sunrise).getHours();
   const minutes = new Date(data.sys.sunrise).getMinutes();
   const hourSet = new Date(data.sys.sunset).getHours();
